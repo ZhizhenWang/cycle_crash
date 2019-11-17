@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NYPD Cycle Crash</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    <script src="{{url_for('static', filename='leaflet/nyborough.js')}}"></script>
+</head>
+<body>
+<!--<h1>NYPD Cycle Crash</h1>-->
+<div id="imap"></div>
+<!--<div>-->
+<!--<select id="distsel">-->
+<!--{% for district in districts %}-->
+<!--<option value="{{district.id}}">{{district.name}}</option>-->
+<!--{% endfor %}-->
+<!--</select>-->
+<!--</div>-->
+<script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>

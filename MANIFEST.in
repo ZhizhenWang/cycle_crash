@@ -1,0 +1,3 @@
+graft cycle_crash/static
+graft cycle_crash/templates
+global-exclude *.pyc
