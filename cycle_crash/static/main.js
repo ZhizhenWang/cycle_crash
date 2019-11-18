@@ -131,7 +131,7 @@ $(function() {
 
     makeMap();
     //todo seperate geojson to layerGroup, or use different tile
-//    L.geoJson(boroughData, {style: style}).addTo(mymap);
+   L.geoJson(boroughData, {style: style}).addTo(mymap);
 
     addOverlay()
 
