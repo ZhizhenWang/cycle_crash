@@ -1,8 +1,6 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 50px;
 }
-html, body, #imap {
-    height: 100%;
-    width: 100vw;
+#imap {
+    height: 60vh;
 }

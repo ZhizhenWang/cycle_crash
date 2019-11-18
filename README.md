@@ -37,3 +37,10 @@ Or on Windows cmd:
 > python -m flask run
 ```
 Open <http://127.0.0.1:5000> in a browser.
+
+## API
+Get the crash information by borough `("Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island")`   
+`GET /crash/{borough_name}`
+
+Get all bike station information  
+`GET /stations`

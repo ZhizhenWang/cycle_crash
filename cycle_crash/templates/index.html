@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>NYPD Cycle Crash</title>
+
     <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet-panel-layers.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    <script src="{{url_for('static', filename='leaflet/leaflet-panel-layers.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
     <script src="{{url_for('static', filename='leaflet/nyborough.js')}}"></script>
 </head>
 <body>
-<!--<h1>NYPD Cycle Crash</h1>-->
+<h1>NYPD Cycle Crash Map</h1>
 <div id="imap"></div>
 <!--<div>-->
 <!--<select id="distsel">-->
