@@ -8,6 +8,11 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.7 python3.7-venv
 ```
+### Clone the code
+```console
+git clone https://github.com/ZhizhenWang/cycle_crash.git
+```
+
 ### Create a virutalenv and activate it  
 Linux Platform:
 ```console
@@ -45,6 +50,7 @@ $ flask init-db
 ```
 Run with a production WSGI server
 ```console
+# pip install waitress
 $ waitress-serve --call 'cycle_crash:create_app'
 ```
 Open <http://0.0.0.0:8080/> in a browser.
