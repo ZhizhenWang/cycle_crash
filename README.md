@@ -37,12 +37,10 @@ and move into `cycle_crash/cycle_crash`
 First generate the sqlite database, then run the flask app
 ```console
 $ export FLASK_APP=cycle_crash
-$ export FLASK_ENV=development
 ```
 Or on Windows cmd:
 ```console
 > set FLASK_APP=cycle_crash
-> set FLASK_ENV=development
 ```
 Initalize database
 ```console
@@ -50,7 +48,7 @@ $ flask init-db
 ```
 Run with a production WSGI server
 ```console
-# pip install waitress
+$ pip install waitress
 $ waitress-serve --call 'cycle_crash:create_app'
 ```
 Open <http://0.0.0.0:8080/> in a browser.
@@ -74,3 +72,10 @@ Get the crash information by borough `("Manhattan", "Brooklyn", "Queens", "Bronx
 
 Get all bike station information  
 `GET /stations`
+
+## Feature work
+- Generate API documentation
+- Call the NYPD data from API endpoint instead of download it manually
+- Use python sqlalchemy for ORM
+- Add map fullscreen button
+- Color crash marker to show how far they're from station point

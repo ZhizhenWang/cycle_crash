@@ -42,9 +42,9 @@ def get_cycle_collision_data() -> pd.DataFrame:
         raw_data = raw_data[(raw_data['LONGITUDE'].notnull()) & (raw_data['LATITUDE'].notnull())]
 
         raw_data = raw_data.apply(lambda x: x.str.strip() if x.dtype == "object" else x)  # strip whitespace value
-        raw_data.replace(np.nan, '', inplace=True)
 
         raw_data = raw_data[raw_data.BOROUGH.notnull()]  # remove empty borough rows
+        raw_data.replace(np.nan, '', inplace=True)
         return raw_data
 
 
