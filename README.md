@@ -78,4 +78,6 @@ Get all bike station information
 - Call the NYPD data from API endpoint instead of download it manually
 - Use python sqlalchemy for ORM
 - Add map fullscreen button
-- Color crash marker to show how far they're from station point
+- ~~Color crash marker to show how far they're from station point~~
+
+<img src="cycle_crash/static/screenshot2.png" width="80%">

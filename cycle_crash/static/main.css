@@ -4,3 +4,31 @@ body {
 #imap {
     height: 70vh;
 }
+i.fa-exclamation {
+  top: -5px;
+}
+.fa-stack{
+  width: 36px
+}
+i.fa-stack-1x{
+  font-size: .8em;
+  top: -0.25em;
+}
+i.fa-stack-2x{
+  text-shadow: 3px 2px 5px black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #f4f4f4;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 12px/15px Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 9.1rem;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #333;
+}

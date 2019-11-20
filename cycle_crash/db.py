@@ -34,7 +34,7 @@ def get_station_data() -> pd.DataFrame:
 
 
 def get_cycle_collision_data() -> pd.DataFrame:
-    # in order to get the up to date data, could be replaced
+    # in order to get updated data, could be replaced
     #  with api, if registered account https://data.cityofnewyork.us/profile/edit/developer_settings
     with current_app.open_resource('Motor_Vehicle_Collisions_-_Crashes.csv') as f:
         raw_data = pd.read_csv(f, low_memory=False)
@@ -57,6 +57,7 @@ def init_db():
     df.to_sql('crashes', db, if_exists='replace', index=False)
 
 
+# defines a command line command called init-db
 @click.command('init-db')
 @with_appcontext
 def init_db_command():
