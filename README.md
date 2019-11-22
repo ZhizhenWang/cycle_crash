@@ -77,7 +77,7 @@ Get all bike station information
 - Generate API documentation
 - Call the NYPD data from API endpoint instead of download it manually
 - Use python sqlalchemy for ORM
-- Add map fullscreen button
-- ~~Color crash marker to show how far they're from station point~~
+- ~~Add map fullscreen button~~ done
+- ~~Color crash marker to show how far they're from station point~~ done
 
 <img src="cycle_crash/static/screenshot2.png" width="80%">

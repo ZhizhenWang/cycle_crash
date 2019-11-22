@@ -153,33 +153,6 @@ distanceInfo.update = function (dis) {
     'Click one station, and hover over a crash location') + '</p>';
 };
 
-// function addOverlay() {
-//   var overlayMaps = [{
-//     group: "Crash Location",
-//     collapsed: true,
-//     layers: boroughName.map(function (id) {
-//       return {
-//         name: id,
-//         layer: crashes[id]
-//       }
-//     })
-//   },
-//   {
-//     group: "Bike Station",
-//     layers: [{
-//       name: "Citibike",
-//       layer: stations
-//     }]
-//   }
-//   ]
-
-//   pl = L.control.panelLayers(null, overlayMaps, {
-//     collapsed: false,
-//     //        collapsibleGroups: true,
-//     compact: true,
-//   }).addTo(mymap);
-// }
-
 function addOverlay() {
   var groupedOverlays = {
     'Crash Location': crashes,
@@ -304,6 +277,7 @@ $(function () {
   renderStation();
 
   makeMap();
+  mymap.addControl(new L.Control.Fullscreen());
 
   addOverlay()
   addDrawPlugin()
