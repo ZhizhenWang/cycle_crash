@@ -121,8 +121,8 @@ function renderCrash(borough) {
         icon: crashIcon(redDynamic(DEFAULT_DIST))
       })
         .bindPopup('Collision ID: ' + arr['COLLISION_ID'] + '</br>Date: ' +
-          arr['ACCIDENT DATE'] + '</br>Time: ' + arr['ACCIDENT TIME'] + '</br>Injured: ' +
-          arr['NUMBER OF CYCLIST INJURED'] + '</br>Killed: ' + arr['NUMBER OF CYCLIST KILLED'])
+          arr['ACCIDENT_DATE'] + '</br>Time: ' + arr['ACCIDENT_TIME'] + '</br>Injured: ' +
+          arr['NUMBER_OF_CYCLIST_INJURED'] + '</br>Killed: ' + arr['NUMBER_OF_CYCLIST_KILLED'])
         .on(crashEvent)
         .addTo(crashes[borough]);
       crashMarkers.push(markerTmp);

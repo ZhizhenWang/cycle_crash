@@ -44,7 +44,7 @@ Or on Windows cmd:
 ```
 Initalize database
 ```console
-$ flask init-db
+$ flask init-db [number of crash records] # default is 100
 ```
 Run with a production WSGI server
 ```console
@@ -75,7 +75,7 @@ Get all bike station information
 
 ## Feature work
 - Generate API documentation
-- Call the NYPD data from API endpoint instead of download it manually
+- ~~Call the NYPD data from API endpoint instead of download it manually~~
 - Use python sqlalchemy for ORM
 - ~~Add map fullscreen button~~ done
 - ~~Color crash marker to show how far they're from station point~~ done
